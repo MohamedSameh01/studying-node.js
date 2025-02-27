@@ -10,6 +10,7 @@ app.get("/", (req, res) => {
   res.send(`<h1>Hello My name is mohamed Sameh</h1>`);
 });
 
+
 // get products based on query paranms
 app.get("/products", (req, res) => {
   const filteredQuery = req.query.filter as string;  // get the query but make sure it's a value for the title
